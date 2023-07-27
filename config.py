@@ -1,3 +1,10 @@
+'''
+@File    :   config.py
+@Time    :   2023/07/27 13:03:00
+@Author  :   ZHongtian Tang
+@Version :   1.0
+@Contact :   799138793@qq.com
+'''
 from __future__ import annotations
 import copy
 import logging

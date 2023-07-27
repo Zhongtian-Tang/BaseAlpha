@@ -1,13 +1,10 @@
-#!/usr/bin/env python
-# -*- encoding: utf-8 -*-
 '''
 @File    :   utils.py
-@Time    :   2022/07/21 14:08:28
-@Author  :   Liu Junli
+@Time    :   2023/07/27 13:10:00
+@Author  :   ZHongtian Tang
 @Version :   1.0
-@Contact :   liujunli.xmu@foxmail.com
+@Contact :   799138793@qq.com
 '''
-
 import os
 import io
 import re
@@ -557,7 +554,7 @@ def resample(data: pd.DataFrame, freq: str = 'M'):
     year = date_idx.year
     if freq == 'D':
         freq = date_idx.dayofyear
-    if freq == 'Y':
+    elif freq == 'Y':
         freq = date_idx.year
     elif freq == 'M':
         freq = date_idx.month
