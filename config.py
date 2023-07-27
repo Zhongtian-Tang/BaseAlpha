@@ -77,10 +77,12 @@ BM = {
 
 _default_config = {
     'date_range': {
-        'start': '2017-01-01',
-        'end': '2022-06-30'
+        'start': '2020-01-01',
+        'end': '2023-07-23'
     },
-    "connect": dict(host='10.224.16.81', user='haquant', passwd='haquant', database='jydb', port=3306, charset='utf8'),
+    "connect": dict(host='10.224.1.70', user='tangzt', passwd='zxcv1234', database='tangzt', port=3306, charset='utf8'),
+    "ths": dict(username='hacb231', password='fbede3'),
+    "ths_app": {"APPKEY": '63E070E10010', 'APPSECRET': '41686E9EE9E48448CD15D0FA0666A8E2'},
     'cne5': ['Beta', 'BooktoPrice', 'EarningsYield', 'Growth', 'Leverage', 'Liquidity', 'Momentum', 'NonLinearSize', 'ResidualVolatility', 'Size'],
     'BM': BM,
     'logging_config': {
