@@ -565,7 +565,7 @@ def resample(data: pd.DataFrame, freq: str = 'M'):
         freq = date_idx.quarter
     date_idx = date_idx.to_frame().groupby([year, freq], as_index=False).last().set_index('tradedate')
 
-    return data.reindex(date_idx.index, level='tradedate', method='ffill')
+    return data.reindex(date_idx.index, level='tradedate')                      
 
 
 
